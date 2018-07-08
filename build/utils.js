@@ -29,7 +29,7 @@ exports.htmlPlugin = function() {
       template: filePath,
       filename: filename + '.html',
       chunks: [filename],
-      inject: true 
+      inject: true
     }
     if (process.env.NODE_ENV === 'production') {
       conf = merge(conf, {
@@ -46,9 +46,6 @@ exports.htmlPlugin = function() {
   })
   return arr
 }
-
-
-
 exports.assetsPath = function (_path) {
   const assetsSubDirectory = process.env.NODE_ENV === 'production'
     ? config.build.assetsSubDirectory
