@@ -78,7 +78,7 @@
                   v-if="rankData.hotGoods[0]"
                     v-for="(good,index) in rankData.hotGoods"
                   >
-                    <a href="https://h5.youzan.com/v2/showcase/goods?alias=27cjv5wdsb4to&amp;source=yzapp&amp;f_platform=yzapp">
+                    <a :href="'goods.html?id='+good.id">
                       <div class="thumb badge center-img">
                         <img :src="good.img">
                         <span class="num">{{index+1}}</span>
@@ -106,7 +106,7 @@
                   >
                     <div class="shop-title">
                       <span class="badge">{{index+1}}</span>
-                      <a href="https://h5.youzan.com/v2/showcase/homepage?kdt_id=10695955&amp;source=yzapp">{{shop.name}}</a>
+                      <a :href="'goods.html?id='+shop.id">{{shop.name}}</a>
                       <span class="follows"> / 关注度: {{shop.follows}}</span>
                     </div>
                     <ul class="shop-images">

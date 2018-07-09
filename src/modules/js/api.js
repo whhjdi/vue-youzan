@@ -4,7 +4,11 @@ let url = {
   'topList': '/category/topList',
   'subList': '/category/subList',
   'rank': '/category/rank',
-  'searchList': '/search/list'
+  'searchList': '/search/list',
+  'dealList':'/goods/deal',
+  'detailList':'/goods/details',
+  'evaliuationList':'/goods/evaluation',
+  'addCart':'/cart/add'
 }
 
 //开发环境和打包上线的切换
