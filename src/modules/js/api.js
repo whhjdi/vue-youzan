@@ -8,7 +8,12 @@ let url = {
   'dealList':'/goods/deal',
   'detailList':'/goods/details',
   'evaliuationList':'/goods/evaluation',
-  'addCart':'/cart/add'
+  'cartAdd':'/cart/add',
+  'cartUpdate':'/cart/update',
+  'cartList':'/cart/list',
+  'cartReduce':'/cart/reduce',
+  'cartRemove':'/cart/remove',
+  'cartMrremove':'/cart/mrremove'
 }
 
 //开发环境和打包上线的切换

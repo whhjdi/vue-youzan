@@ -39,4 +39,17 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
     ```
     定义导出的方法，在组件中如果要使用的时候
     直接import 进去就可以了
-+ 
++ moke.js 
+```javascript
+import Mock from 'mockjs'
+let Random = Mock.Random
+
+let data = Mock.mock({
+    'cartList|3':[{
+        'goodsList|1-2':[{
+            id:Random.int(10,10000),
+            img: Mock.mock('@img(90x90,@color)')
+        }]
+    }]
+})
+```
